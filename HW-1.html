@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liubov-JS-HW1</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="body-container">
+        <header>
+            <h3>JavaScript Basic Course</h3>
+            <h2>Homework 1</h2>
+        </header>
+        <div class="div-container">
+            <ol>
+                <li>Задать температуру в градусах по Цельсию. Вывести в alert соответствующую температуру в градусах по
+                    Фаренгейту. Подсказка: расчёт идёт по формуле: Tf = (9 / 5) * Tc + 32, где Tf – температура по
+                    Фаренгейту, Tc – температура по Цельсию.</li>
+                <li>Работа с переменными.</li>
+                <li>Объявить две переменные: admin и name. Записать в name строку "Василий"; Скопировать значение из
+                    name в
+                    admin. Вывести admin (должно вывести «Василий»).</li>
+                <li>*Чему будет равно JS-выражение 1000 + "108"/</li>
+                <li>*Самостоятельно разобраться с атрибутами тега script (async и defer)</li>
+            </ol>
+            <button>посмотреть решение</button>
+        </div>
+        <script>
+            let degC = prompt('Задайте температуру в градусах Цельсия и узнайте сколько это в Фаренгейтах');// открывается пустое окошко с запросом ввода текста
+            let degF = parseInt(((9 / 5) * degC + 32) * 100) / 100;
+            window.open("Tf = (9 / 5) * Tc + 32" + '\n' + degC + " degC = " + degF + " degrF");
+            let name = prompt("Кто будет админом?");
+            let nameLength = name.length;
+            alert(nameLength);
+            let symbols = "0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM";
+            let symbLangth = symbols.length;
+            alert(symbLength);
+            let admin = "";
+            for (let i = 0; i < nameLength; i++) {
+                for (let j = 0; j < symbLength; j++) {
+                    if (name[i] == symbols[j]) {
+                        admin = admin + name[i]
+                        alert(admin);
+                    }
+                }
+            }
+
+            alert("Админом назначен <<" + admin + ">>");
+            alert("1000+str(108) = " + 1000 + '108' + '\n' + "typeof(1000+str(108))= " + typeof (1000 + "108"));
+                //Перед сложении переменной любого типа со строкой переменная приводится к типу строка
+
+
+
+        </script>
+
+
+
+
+        <footer> Copyright © Liubov' Kravtsova </footer>
+    </div>
+</body>
+
+</html>
