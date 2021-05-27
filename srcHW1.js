@@ -2,8 +2,8 @@ let degC = prompt('Задайте температуру в градусах Ц�
 let degF = parseInt(((9 / 5) * degC + 32) * 100) / 100;
 alert("Tf = (9 / 5) * Tc + 32" + '\n' + degC + " degC = " + degF + " degrF");
 
-var name = prompt("Кто будет админом?");
-var admin = name;
+var Name = prompt("Кто будет админом?");
+var admin = Name;
 var k = 2;
 alert(`Админом будет ${admin}`);
 
