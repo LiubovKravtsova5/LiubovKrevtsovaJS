@@ -106,10 +106,10 @@
                         var pls = function (firstArg, secondArg) {
                             return firstArg + secondArg;
                         }
-                        var minus = function (firstArg, secondArg) {
+                        var diff = function (firstArg, secondArg) {
                             return firstArg - secondArg;
                         }
-                        function diff(firstArg, secondArg) {
+                        function quot(firstArg, secondArg) {
                             return firstArg / secondArg;
                         }
                         function prod(firstArg, secondArg) {
@@ -117,9 +117,9 @@
                         }
                         x = pls(a, b);
                         console.log("x = a + b = ", x);
-                        x = minus(a, b);
+                        x = diff(a, b);
                         console.log("x = a - b = ", x);
-                        console.log("a/b = ", diff(a, b));
+                        console.log("a/b = ", quot(a, b));
                         console.log("a*b = ", prod(a, b));
                     </script>
                 </li>
@@ -129,6 +129,31 @@
                         переданного значения операции (использовать switch) выполнить одну из арифметических
                         операций
                         (использовать функции из задания 4) и вернуть полученное значение.</p>
+                    <script>
+                        'use strict'
+                        var operation = prompt("чтобы воспользоваться калькулятором выберете операцию" + "\n" + "add - сложение" + "\n" + "diff - вычитание" + "\n" + "quot - деление" + "\n" + "prod - умножение");
+
+                        function mathOperation(a, b, operation) {
+                            switch (operation) {
+                                case "add":
+                                    return pls(a, b)
+                                case "diff":
+                                    return diff(a, b)
+
+                                case "quot":
+                                    return quot(a, b)
+
+                                case "prod":
+                                    return prod(a, b)
+                                default:
+                                    alert("некорректная операция")
+                                    break;
+                            }
+
+                        }
+                        console.log(operation, "(a,b) = ", mathOperation(a, b, operation))
+
+                    </script>
                 </li>
                 <li>
                     <h3>**</h3>
