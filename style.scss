@@ -5,6 +5,10 @@
 $custWidth:1140px;
 $runningTitleHeight:100px;
 
+i{
+    margin-bottom: 20px;
+    color:rgb(183, 236, 183);
+}
 body{
     background-color: rgb(29, 30, 31) ;
     color: white;
@@ -61,4 +65,7 @@ button{
         border: 2px solid black;
         
     } 
+}
+ul{
+    list-style-type:none;
 }
