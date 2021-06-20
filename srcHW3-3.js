@@ -1,5 +1,5 @@
 'use strict'
-const products = [
+const products3 = [
     {
         id: 3,
         price: 200,
@@ -13,7 +13,7 @@ const products = [
         price: 1000,
     },
 ];
-products.forEach(function (item) {
+products3.forEach(function (item) {
     console.log("price today for id" + item.id + " is " + (item.price * 0.85));
 });
 
