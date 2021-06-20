@@ -1,5 +1,6 @@
 "use strict"
-for (i = 0; i < 10; i++) {
+console.log(0 + " - это ноль")
+for (let i = 1; i < 11; i++) {
     if (i % 2) {
         console.log(i + " - нечетное число")
     } else {
