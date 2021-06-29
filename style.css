@@ -8,6 +8,10 @@ i {
   color: #b7ecb7;
 }
 
+ol {
+  margin-left: 20px;
+}
+
 body {
   background-color: #1d1e1f;
   color: white;
