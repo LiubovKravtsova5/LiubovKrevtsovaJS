@@ -3,6 +3,15 @@
   padding: 0;
 }
 
+i {
+  margin-bottom: 20px;
+  color: #b7ecb7;
+}
+
+ol {
+  margin-left: 20px;
+}
+
 body {
   background-color: #1d1e1f;
   color: white;
@@ -88,5 +97,9 @@ button {
 button:hover {
   font-weight: 700;
   border: 2px solid black;
+}
+
+ul {
+  list-style-type: none;
 }
 /*# sourceMappingURL=style.css.map */
